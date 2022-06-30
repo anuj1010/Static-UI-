@@ -36,7 +36,7 @@ const Card = ({ heading, description, image }) => {
 
                 <div class="product-image">
 
-                    <img src={image} />
+                    <img src={image} alt='' />
 
                     <div class="info">
                         <h2> Description</h2>

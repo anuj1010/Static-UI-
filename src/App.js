@@ -13,7 +13,7 @@ const App = () => {
                     <p className='nav_buttons'>About</p>
                     <p className='nav_buttons'>Contact Us</p>
                 </div>
-                <img className='icon' src='./images/hologram.png' />
+                <img className='icon' src='./images/hologram.png' alt='' />
             </div>
             <div className='header_container'>
                 <p className='heading'>Top 5 best metaverse projects</p>
