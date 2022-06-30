@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Card.css";
 
-const Card = ({heading, description, image}) => {
+const Card = ({ heading, description, image }) => {
     return (
         <>
 
@@ -36,8 +36,7 @@ const Card = ({heading, description, image}) => {
 
                 <div class="product-image">
 
-                    <img src={image}/>
-
+                    <img src={image} />
 
                     <div class="info">
                         <h2> Description</h2>

@@ -8,6 +8,7 @@
         margin: 2em auto;
         height: 450px;
         width: 75%;
+        display: flex;
     }
     
     .product-details {
@@ -61,11 +62,9 @@
     
     
     #container .product-details > p {
-    font-family: 'EB Garamond', serif;
         text-align: center;
         font-size: 18px;
-        color: #7d7d7d;
-        
+        color: #7d7d7d; 
     }
     .control{
         position: absolute;
@@ -135,7 +134,7 @@
         position: relative;
         overflow: hidden;
         height: 50%;
-        /* float: right; */
+        float: right;
         width: 45%;
         margin-top: 100px;
     }
@@ -171,3 +170,69 @@
     
     .product-image:hover img {transition: all 0.3s ease-out;}
     .product-image:hover img {transform: scale(1.2, 1.2);}
+
+    @media screen and (max-width:930px) {
+
+        #container .product-details > p {
+           font-size: 16px;   
+            }
+            .btn span {
+              
+              padding: 8px 15px;
+                font-size: 1em;
+                margin:0;
+                
+            }
+        
+    }
+
+    @media screen and (max-width:760px) {
+
+        #container .product-details > p {
+           font-size: 13px;   
+            }
+            .btn span {
+              
+              padding: 6px 12px;
+                font-size: 1em;
+                margin:0;
+                
+            }
+        
+    }
+
+    @media screen and (max-width:545px) {
+        #container{
+            flex-direction: column-reverse;
+            height: auto;
+        }
+        #container .product-details > p {
+           font-size: 13px;   
+            }
+            .btn span {
+              
+              padding: 6px 12px;
+                font-size: 1em;
+                margin:0;
+                
+            }
+            .product-image{
+                margin-top: 0;
+                overflow: auto;
+                height: auto;
+                float: none;
+                width: auto;
+            }
+            .product-details{
+                height: auto;
+                float: none;
+                width: auto;
+            }
+            .control{
+                margin: 8px;
+                position: static;
+                text-align: center;
+            }
+            
+        
+    }
